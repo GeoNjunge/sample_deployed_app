@@ -62,6 +62,10 @@ jobs:
             name: dist-files
             path: ./dist
 
+        - name: Install Custom Action Dependencies
+          run: npm install
+          working-directory: ./.github/actions
+
         - name: Output Contents
           run: ls
         
